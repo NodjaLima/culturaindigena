@@ -67,16 +67,29 @@ img {
   display: flex;
 }
 
-@media (max-width: 700px) 
-{
-  body {display: flex;
+@media (max-width: 700px) {
+
+body {display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
   flex-direction: column;
 }
 
 .conteudo {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+  max-width: 100%;
+}
+
+.itemh {
+  display: flex;
+  flex-direction: column;
 }
 
 }
